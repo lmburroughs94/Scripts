@@ -1,0 +1,22 @@
+#!/bin/bash
+# This is a script that updates/upgrades the system,
+# as well as runs an autoremove command the for CentO7 system.
+
+
+echo -e "\n$(date "+%d-%m-%Y --- %T") --- Starting work\n"
+
+sudo yum update && sudo yum upgrade
+
+sudo yum autoremove
+
+echo -e "\n$(date "+%T") \t Script Terminated"
+
+
+
+
+
+
+
+
+
+
